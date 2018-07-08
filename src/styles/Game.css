@@ -1,0 +1,28 @@
+
+:root{
+--CELL_SIZE:20px;
+--WIDTH: 800px;
+--HEIGHT: 600px;
+}
+
+.board{
+    position: relative;
+    margin: 0 auto;
+    background: black;
+    width: var(--WIDTH);
+    height: var(--HEIGHT);
+    background-image: linear-gradient(#333333 1px,transparent 1px),
+                      linear-gradient(90deg, #333333 1px, transparent 1px);
+    background-size: var(--CELL_SIZE) var(--CELL_SIZE);
+}
+
+.Cell{
+    background: #ccc;
+    position: absolute;
+}
+
+.controls{
+    position: relative;
+    margin: 0 auto;
+    width: 400px;
+}
