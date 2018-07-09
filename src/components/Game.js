@@ -133,9 +133,9 @@ export default class Game extends React.Component{
 
     calculateNeighbors(board, x, y) {
         let neighbors = 0;
-        const dirs = [[-1, -1], [-1, 0], [-1, 1], [0, 1], [1, 1], [1, 0], [1, -1], [0, -1]];
-        for (let i = 0; i < dirs.length; i++) {
-            const dir = dirs[i];
+        const possible = [[-1, -1], [-1, 0], [-1, 1], [0, 1], [1, 1], [1, 0], [1, -1], [0, -1]];
+        for (let i = 0; i < possible.length; i++) {
+            const dir = possible[i];
             let y1 = y + dir[0];
             let x1 = x + dir[1];
 
